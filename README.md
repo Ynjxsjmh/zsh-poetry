@@ -7,7 +7,7 @@ This plugin looks for [poetry](https://github.com/python-poetry/poetry), and loa
 
 ### Antigen
 
-`antigen bundle Ynjxsjmh/zsh-poetry`
+`antigen bundle Ynjxsjmh/zsh-poetry@main`
 
 ## How does zsh-poetry work?
 
