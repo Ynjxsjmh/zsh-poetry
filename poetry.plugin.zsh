@@ -13,14 +13,8 @@ if [[ $FOUND_POETRY -ne 1 ]]; then
     FOUND_POETRY=1
 fi
 
-COMPLETION_FILE=$(dirname "$0")/_poetry
-
 if [[ $FOUND_POETRY -eq 1 ]]; then
-    poetry completions zsh > $COMPLETION_FILE
+    source <(poetry completions zsh)
 fi
 
-if [[ -f $COMPLETION_FILE ]]; then
-    source $COMPLETION_FILE
-fi
-
-unset FOUND_POETRY COMPLETION_FILE
+unset FOUND_POETRY
